@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+			window.onload = function() {
+				const toggleBtn = document.getElementById("modeToggle");
+		  
+				function setMode(isDark) {
+				document.body.classList.toggle("dark-mode", isDark);
+				toggleBtn.textContent = isDark ? "☀️ LightMode" : "🌙 DarkMode";
+				localStorage.setItem("mode", isDark ? "dark" : "light");
+				}
+		  
+				// 초기 상태
+				const savedMode = localStorage.getItem("mode");
+				const isDark = savedMode === "dark";
+				setMode(isDark);
+			
+				toggleBtn.addEventListener("click", () => {
+				setMode(!document.body.classList.contains("dark-mode"));
+				});
+			};
+		  </script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>Sungmin G</strong> <br ></h1>
+					<h4>Backend Developer</h4>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>성장을 위해 변화를 두려워하지 않는 개발자</h2>
+						</header>
+						<p>작은 문제에서 시작하여 의미 있는 흐름을 만들어갑니다. 새로운 도전을 두려워하지 않고, 모든 문제에 대한 해결책을 고민합니다.</p>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="https://windy-calf-df8.notion.site/1dbd1cdee18380a4836cf481ecb937c0?pvs=4" class="image fit thumb" target="_blank" rel="noopener noreferrer" ><img src="images/thumbs/01.png" alt="" /></a>
+								<h3>🔒 Notion 링크</h3>
+								<p>현재 작업 진행중인 포트폴리오입니다.</p>
+							</article>
+							<!-- <article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article> -->
+						</div>
+					</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<button id="modeToggle" class="mode-toggle">🌙 DarkMode</button>
+					<ul class="icons">
+						<li><a href="mailto:my_glenn@kakao.com" class="icon solid fa-envelope" target="_blank" rel="noopener noreferrer"><span class="label">Email</span></a></li>
+						<li><a href="https://github.com/myglenn" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/sungmin-g-2a1b04353" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+					  </ul>
+					<ul class="copyright">
+						<li>&copy; myglenn</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
